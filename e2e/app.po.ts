@@ -6,6 +6,6 @@ export class SelectDatePickerPage {
   }
 
   getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+    return element(by.css('select-date-picker h1')).getText();
   }
 }

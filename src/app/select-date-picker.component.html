@@ -1,0 +1,25 @@
+<div class="date-picker-body" [ngStyle]="{'width': width + 'px'}">
+
+  <div class="col-md-4">
+    <md-select placeholder="{{dayPlaceholder}}" name="day">
+      <md-option [value]="1">1</md-option>
+      <md-option [value]="2">2</md-option>
+      <md-option [value]="3">3</md-option>
+      <md-option [value]="4">4</md-option>
+      <md-option [value]="5">5</md-option>
+      <md-option [value]="6">6</md-option>
+      <md-option [value]="7">7</md-option>
+      <md-option [value]="8">8</md-option>
+    </md-select>
+  </div>
+  <div class="col-md-4">
+    <md-select placeholder="{{monthPlaceholder}}" name="day">
+      <md-option [value]="i" *ngFor="let month of months; let i = index;" >{{month}}</md-option>
+    </md-select>
+  </div>
+  <div class="col-md-4">
+    <md-select placeholder="{{yearPlaceholder}}" name="day">
+      <md-option [value]="year" *ngFor="let year of years" >{{year}}</md-option>
+    </md-select>
+  </div>
+</div>
